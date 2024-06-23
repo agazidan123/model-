@@ -12,7 +12,7 @@ app = FastAPI()
 selected_columns = ['Title', 'Tag', 'Review', 'Comment', 'Country', 'Price', 'Rating', 'tags', 'img_link']
 
 # Ensure the CSV file contains the 'img_link' column, or add it if missing
-df = pd.read_csv(r"C:\Users\HP\Downloads\projec_2024\Final model\updated_data_with_img.csv")
+df = pd.read_csv(r"https://raw.githubusercontent.com/EbadaHamdy/smartto/main/0.csv")
 for col in selected_columns:
     if col not in df.columns:
         df[col] = None
